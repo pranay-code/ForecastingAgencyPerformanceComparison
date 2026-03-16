@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local secrets and config
+.streamlit/secrets.toml
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
