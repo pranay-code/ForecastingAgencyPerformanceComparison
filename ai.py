@@ -220,7 +220,7 @@ def prepare_tool_runtime(df: pd.DataFrame) -> Dict[str, Any]:
 @st.cache_resource
 def initialize_gemini_client() -> Optional[genai.Client]:
     """Initialize client using Streamlit secrets."""
-    api_key = st.secrets.get("GEMINI_API_KEY")
+    api_key = st.secrets.get("GEMINI_API_KEY_C")
     if not api_key: return None
     return genai.Client(api_key=api_key)
 
